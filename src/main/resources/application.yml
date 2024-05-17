@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: myTest
+
+  datasource:
+    username: ${MYSQL_USERNAME:postgres}
+    password: ${MYSQL_PASSWORD:password}
+    url: jdbc:postgresql://localhost:5432/postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+
+swagger:
+  documentation:
+    uri: uri
