@@ -3,7 +3,7 @@ spring:
     name: myTest
 
   datasource:
-    username: ${MYSQL_USERNAME:postgres}
+    username: ${MYSQL_USERNAME:root}
     password: ${MYSQL_PASSWORD:password}
     url: jdbc:postgresql://localhost:5432/postgres
     driver-class-name: org.postgresql.Driver
